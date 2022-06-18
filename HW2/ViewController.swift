@@ -18,11 +18,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         redLabel.layer.cornerRadius = 50
-        redLabel.layer.opacity = 0.5
+        redLabel.alpha = 0.5
         yellowLabel.layer.cornerRadius = 50
-        yellowLabel.layer.opacity = 0.5
+        yellowLabel.alpha = 0.5
         greenLabel.layer.cornerRadius = 50
-        greenLabel.layer.opacity = 0.5
+        greenLabel.alpha = 0.5
         
         switchButton.layer.cornerRadius = 8
         
@@ -43,17 +43,17 @@ class ViewController: UIViewController {
     private func changeColor(by counter: Int) {
         switch counter {
         case 1:
-            redLabel.layer.opacity = 0.5
-            yellowLabel.layer.opacity = 1
-            greenLabel.layer.opacity = 0.5
+            redLabel.alpha = 0.5
+            yellowLabel.alpha = 1
+            greenLabel.alpha = 0.5
         case 2:
-            redLabel.layer.opacity = 0.5
-            yellowLabel.layer.opacity = 0.5
-            greenLabel.layer.opacity = 1
+            redLabel.alpha = 0.5
+            yellowLabel.alpha = 0.5
+            greenLabel.alpha = 1
         default:
-            redLabel.layer.opacity = 1
-            yellowLabel.layer.opacity = 0.5
-            greenLabel.layer.opacity = 0.5
+            redLabel.alpha = 1
+            yellowLabel.alpha = 0.5
+            greenLabel.alpha = 0.5
         }
     }
     
